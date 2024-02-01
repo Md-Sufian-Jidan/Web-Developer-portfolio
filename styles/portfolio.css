@@ -230,17 +230,32 @@ textarea {
 }
 
 @media screen and (max-width:576px) {
-    .skills-container , .resume-container , footer{
+    .header{
+        background-image:none ;
+    }
+    nav,
+    nav>ul,
+    .skills-container , .resume-container ,.about-info-container,.banner, footer{
     flex-direction: column;
     }
+    nav>ul{
+        gap: 10px;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    .banner,
     #what-i-do-description{
         padding: 20px;
     }
-    footer{
+    footer, .about{
         padding: 10px;
     }
     .footer-column{
         width: 100%;
+    }
+    .btn-primary{
+        margin-bottom: 15px;
     }
     .contact input[type="text"],
 .contact input[type="email"],
@@ -251,5 +266,8 @@ textarea {
 @media screen and (min-width:576px) and (max-width:960px) {
     footer{
         padding: 30px;
+    }
+    .btn-primary{
+        margin: 15px;
     }
 }
